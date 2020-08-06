@@ -2,7 +2,6 @@
 
 trap 'quit=1' USR1
 
-cdktf get
 cdktf diff
 
 quit=0
