@@ -1,7 +1,6 @@
 #!/bin/sh
 
 if [ "$1" = "cdktf" ]; then
-    yarn install
     cdktf get
 fi
 
