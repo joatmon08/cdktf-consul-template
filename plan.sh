@@ -1,9 +1,5 @@
 #!/bin/sh
 
-if [ "$1" = "cdktf" ]; then
-    cdktf get
-fi
-
 trap 'quit=1' USR1
 
 echo "Reloading terraform plan..."
