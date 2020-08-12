@@ -2,6 +2,8 @@
 
 trap 'quit=1' USR1
 
+echo "Reloading terraform plan..."
+
 if [ "$1" = "cdktf" ]; then
     cdktf get
     cdktf diff
@@ -15,6 +17,5 @@ fi
 quit=0
 while [ "$quit" -ne 1 ]; do
     sleep 1
-    echo "Reloading terraform plan..."
 done
 
