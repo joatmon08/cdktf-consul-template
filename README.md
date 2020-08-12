@@ -6,4 +6,5 @@ the CDK for Terraform.
 ## Versions
 
 * consul-template v0.25.1
-* CDK for Terraform 0.0.13
+* CDK for Terraform 0.0.14
+* Terraform 0.13.0

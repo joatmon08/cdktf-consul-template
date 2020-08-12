@@ -1,8 +1,8 @@
 FROM node:14.7.0
 
-ENV TERRAFORM_CDK_VERSION=0.0.13
+ENV TERRAFORM_CDK_VERSION=0.0.14
 ENV CONSUL_TEMPLATE_VERSION=0.25.1
-ENV TERRAFORM_VERSION=0.12.29
+ENV TERRAFORM_VERSION=0.13.0
 
 RUN cd /usr/local/bin && \
     curl -o consul-template.zip https://releases.hashicorp.com/consul-template/${CONSUL_TEMPLATE_VERSION}/consul-template_${CONSUL_TEMPLATE_VERSION}_linux_amd64.zip && \
