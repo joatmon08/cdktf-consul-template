@@ -9,7 +9,7 @@ RUN cd /usr/local/bin && \
     unzip consul-template.zip && \
     curl -o terraform.zip https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip && \
     unzip terraform.zip && \
-    npm install -g cdktf-cli@${TERRAFORM_CDK_VERSION}
+    npm install -g cdktf-cli@${TERRAFORM_CDK_VERSION} typescript
 
 COPY ./plan.sh /usr/local/bin
 
