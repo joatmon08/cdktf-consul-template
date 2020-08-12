@@ -5,7 +5,7 @@ trap 'quit=1' USR1
 echo "Reloading terraform plan..."
 
 if [ "$1" = "cdktf" ]; then
-    cdktf get
+    npm run build
     cdktf diff
 elif [ "$1" = "terraform" ]; then
     terraform init "${2}"
